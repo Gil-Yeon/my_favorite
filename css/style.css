@@ -1,0 +1,136 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Open+Sans&display=swap');
+
+@import "reset.css";
+
+/* Components(공통된 디자인 요소 의미) */
+@import "components/nav.css";
+@import "components/scrollbar.css";
+@import "components/others_layout.css";
+@import "components/album.css";
+
+/* Screens(각자 개별의 디자인 의미) */
+@import "screen/home.css";
+@import "screen/trip.css";
+@import "screen/cafe.css";
+@import "screen/fifa.css";
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+p{
+  font-size: 17px;
+  font-family: 'Gowun Batang', serif;
+  line-height: 25px;
+  padding: 25px 0px;
+  font-weight: 550;
+  letter-spacing: 1.5px;
+}
+
+@media screen and (max-width:1600px){
+
+  .album_1 img,
+  .album_2 img{
+    width: 190px;
+    height: 190px;
+  }
+
+  .album_1,
+  .album_2{
+    width: 30%;
+  }
+
+}
+
+@media screen and (max-width:1024px){
+
+  .album_1 img,
+  .album_2 img{
+    width: 150px;
+    height: 150px;
+  }
+
+  .nav_link{
+    font-size: 12px;
+  }
+
+  p{
+    font-size: 16px;
+  }
+
+  .others_h1{
+    font-size: 36px;
+  }
+
+}
+
+@media screen and (max-width:768px){
+
+  .album_1,
+  .album_2{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+
+  .album_1 img,
+  .album_2 img{
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+  }
+  
+  .nav_link{
+    min-width: 96px;
+    font-size: 10.24px;
+  }
+
+  p{
+    font-size: 15px;
+  }
+
+  .others_h1{
+    font-size: 32px;
+  }
+
+  .album_title{
+  font-size: 17px;
+  }
+
+}
+
+@media screen and (max-width:480px){
+
+  .album_1,
+  .album_2{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+
+  .album_1 img,
+  .album_2 img{
+    width: 230px;
+    height: 230px;
+    border-radius: 15px;
+  }
+
+  .nav_link{
+    min-width: 64px;
+    font-size: 8px;
+  }
+
+  p{
+    font-size: 15px;
+  }
+
+  .others_h1{
+    font-size: 32px;
+  }
+  
+  .album_title{
+  font-size: 17px;
+  }
+
+}

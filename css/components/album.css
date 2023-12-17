@@ -1,0 +1,48 @@
+.album_1,
+.album_2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 90%;
+}
+
+.album_1 > img:first-child{
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.album_1 > img:nth-child(3){
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.album_2 > img:first-child{
+  border-top-left-radius: 15px;
+}
+
+.album_2 > img:nth-child(3){
+  border-top-right-radius: 15px;
+}
+
+.album_2 > img:nth-child(4){
+  border-bottom-left-radius: 15px;
+}
+
+.album_2 > img:nth-child(6){
+  border-bottom-right-radius: 15px;
+}
+
+.album_1 img,
+.album_2 img{
+  width: 332.5px;
+  height: 332.5px;
+}
+
+.album_title{
+  display: flex;
+  justify-content: center;
+  color: rgba(64, 64, 64, 0.7);
+  font-size: 20px;
+  position: relative;
+  right: 15px;
+  padding: 0px;
+}
